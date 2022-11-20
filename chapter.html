@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo | Biblia Rose</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-1">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100 justify-content-between">
+                <li class="nav-item">
+                <a class="nav-link" href="upload.html" id="upload">Subir Imágen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html" id="user">Índice</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="#" id="user">Nombre</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1 class="text-center font-monospace mt-3" id="title"></h1>
+        
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Subir imagen
+        </button>
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <label for="imagen" class="form-label">Imagen</label>
+                    <input type="file" name="imagen" id="img" class="form-control">
+
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" name="nombre" id="name" class="form-control">
+
+                    <input type="text" name="user" id="user" class="form-control mt-2" disabled>
+
+                    <label for="comment" class="form-label">Comentario</label>
+                    <input type="text" name="commet" id="comment" class="form-control">
+
+                    <label for="fecha" class="form-label">Fecha</label>
+                    <input type="date" name="fecha" id="date" class="form-control">
+   
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" id="file">Subir</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div id="images">
+
+        </div>
+
+
+    </main>
+
+    <footer class="text-muted me-5 ms-5 pt-5">
+        <p class="text-center">Todo esto es traido gracias a nuestra señora y salvadora, Rose. Arose.</p>
+        <p class="float-end">
+            <a href="#">Volver arriba</a>
+        </p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/chapter.js"></script>    
+</body>
+</html>

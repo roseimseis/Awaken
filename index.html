@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qseyo</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-borderless@4/borderless.css" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="image.png">
+
+</head>
+<body class="bgmain">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 justify-content-between">
+                <li class="nav-item">
+                    <a class="nav-link" href="upload.html" id="upload">Subir Imágen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html" id="user">Índice</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="member" data-bs-toggle="dropdown" aria-expanded="false">
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#" id="cierro">Cerrar sesión</a></li>
+                        </ul>
+                    </div>
+                    
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <h1 class="text-center font-monospace mt-3">Biblia</h1>
+        <div class="container">
+            <div class="row" id="biggerCategories">
+              
+            </div>
+          </div>
+          <div id="login"></div>
+    </main>
+
+    <footer class="text-muted me-5 ms-5 pt-5">
+        <p class="text-center">Todo esto es traido gracias a nuestra señora y salvadora, Rose. Arose.</p>
+    </footer>
+    
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/init.js"></script> 
+
+</body>
+</html>
